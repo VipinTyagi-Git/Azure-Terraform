@@ -34,5 +34,9 @@ variable "vm-names" {
 
 }
 
+variable "some-name" {
+  type = number
+}
+
 
 
