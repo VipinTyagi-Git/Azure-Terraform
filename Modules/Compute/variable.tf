@@ -22,10 +22,6 @@ variable "vm-size" {
   type = string
 }
 
-variable "vm_subnet-name" {
-  type = string
-}
-
 variable "vm_nic-name" {
   type = string
 }
@@ -35,5 +31,9 @@ variable "rg-name" {
 }
 
 variable "location" {
+  type = string
+}
+
+variable "vm_subnet-id" {
   type = string
 }

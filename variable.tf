@@ -23,14 +23,15 @@ variable "subnets" {
 
 variable "vm-names" {
   type = map(object({
-    name       = string
-    nic_name   = string
-    publisher  = string
-    offer      = string
-    sku        = string
-    os-version = string
-    vm-size    = string
-    subnet_id= string
+    name         = string
+    nic_name     = string
+    publisher    = string
+    offer        = string
+    sku          = string
+    os-version   = string
+    vm-size      = string
+    vm_subnet-id = string
+
   }))
 
 }
