@@ -30,12 +30,9 @@ variable "vm-names" {
     sku        = string
     os-version = string
     vm-size    = string
+    subnet_id= string
   }))
 
-}
-
-variable "some-name" {
-  type = number
 }
 
 
