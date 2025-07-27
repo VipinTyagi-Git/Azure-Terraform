@@ -10,7 +10,7 @@ module "Network" {
   nsg-name  = var.nsg-name
   subnets   = var.subnets
   location  = var.location
-
+  
   depends_on = [azurerm_resource_group.rg-canberra]
 }
 

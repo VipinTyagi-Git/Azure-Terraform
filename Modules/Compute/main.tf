@@ -8,13 +8,13 @@ locals {
 }
 
 resource "azurerm_network_interface" "vm-nic" {
-  name                = var.value.vm_nic-name
+  name                = var.vm_nic-name
   location            = var.location
   resource_group_name = var.rg-name
 
   ip_configuration {
     name                          = local.ip_configuration_name
-    subnet_id                     = module.Network.subnet_ids[var.value.vm_subnet-name]
+    #subnet_id                     = module.Network.subnet_ids[var.value.vm_subnet-name]
     private_ip_address_allocation = local.ip_allocation
   }
 

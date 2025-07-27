@@ -25,7 +25,7 @@ resource "azurerm_subnet" "subnet" {
 }
 
 resource "azurerm_subnet_network_security_group_association" "nsg-subnet" {
-    for_each = azurerm_subnet.subnet
+    for_each = var.subnets
   subnet_id                 = each.value.id
   network_security_group_id = azurerm_network_security_group.nsg-canberra.id
 
